@@ -6,7 +6,8 @@ const products = [
       category: 'Clothing',
       brand: 'Urban Vogue',
       price: 599,
-      image: '/images/white-tshirt.jpg',
+      image: 'https://bouguessa.com/cdn/shop/files/IMG_6586_700x.jpg?v=1741162195',
+      secondImage: 'https://bouguessa.com/cdn/shop/files/IMG_6587_700x.jpg?v=1741162195',
       description: 'Soft and comfortable cotton t-shirt with a classic fit.',
     },
     {
@@ -15,8 +16,9 @@ const products = [
       category: 'Clothing',
       brand: 'Denim Co.',
       price: 2499,
-      image: '/images/denim-jacket.jpg',
-      description: 'Stylish blue denim jacket with a vintage wash.',
+      image: 'https://bouguessa.com/cdn/shop/files/IMG_0059_600x.jpg?v=1741152605',
+      secondImage: 'https://bouguessa.com/cdn/shop/files/IMG_0060_600x.jpg?v=1741152605',
+      description: 'Lightweight running sneakers designed for comfort and speed.',
     },
   
     // Footwear
@@ -26,7 +28,8 @@ const products = [
       category: 'Footwear',
       brand: 'Sportify',
       price: 3299,
-      image: '/images/sneakers.jpg',
+      image: 'https://bouguessa.com/cdn/shop/files/Nouraecom_600x.jpg?v=1741115201',
+      secondImage: 'https://bouguessa.com/cdn/shop/files/IMG_0044_39dc59d7-b048-4c8d-964d-d198bf960334_600x.jpg?v=1741152976',
       description: 'Lightweight running sneakers designed for comfort and speed.',
     },
     {
@@ -35,48 +38,9 @@ const products = [
       category: 'Footwear',
       brand: 'LeatherWorks',
       price: 4599,
-      image: '/images/black-boots.jpg',
+      image: 'https://bouguessa.com/cdn/shop/files/IMG_6586_700x.jpg?v=1741162195',
+      secondImage: 'https://bouguessa.com/cdn/shop/files/IMG_0059_600x.jpg?v=1741152605',
       description: 'Premium black leather boots for a rugged look.',
-    },
-  
-    // Accessories
-    {
-      id: 5,
-      name: 'Minimalist Watch',
-      category: 'Accessories',
-      brand: 'Timely',
-      price: 4999,
-      image: '/images/minimalist-watch.jpg',
-      description: 'Elegant watch with a minimalist design and premium leather strap.',
-    },
-    {
-      id: 6,
-      name: 'Leather Belt',
-      category: 'Accessories',
-      brand: 'Classic Fit',
-      price: 799,
-      image: '/images/leather-belt.jpg',
-      description: 'Adjustable leather belt with a sleek buckle.',
-    },
-  
-    // Fashion Brands
-    {
-      id: 7,
-      name: 'Summer Collection Dress',
-      category: 'Fashion Brands',
-      brand: 'Fashionista',
-      price: 3599,
-      image: '/images/summer-dress.jpg',
-      description: 'Floral print summer dress from Fashionista’s latest collection.',
-    },
-    {
-      id: 8,
-      name: 'Premium Wool Coat',
-      category: 'Fashion Brands',
-      brand: 'Luxury Line',
-      price: 7999,
-      image: '/images/wool-coat.jpg',
-      description: 'Elegant wool coat crafted from premium materials.',
     },
   ];
   
