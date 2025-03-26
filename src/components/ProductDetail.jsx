@@ -114,8 +114,9 @@ function ProductDetail({ cart, setCart }) {
           
           {/* Payment Section */}
           <button className="p-4 flex items-center justify-center space-x-2 text-black bg-yellow-400 hover:bg-yellow-500 rounded-lg">
-            <FaGooglePay className="text-black" size={24} />
-            <span>Pay with GPay</span>
+            <span>Pay with</span>
+            <FaGooglePay className="text-black mt-1" size={34} />
+
           </button>
           <p className="text-gray-600 underline cursor-pointer">More Payment Options</p>
 
