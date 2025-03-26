@@ -28,8 +28,12 @@ function Navbar() {
     : 'bg-transparent';
 
   return (
-    <nav className={`fixed top-0 left-0 w-full flex items-center justify-between md:justify-between h-20 ${navbarBackground} md:transition-all md:duration-300 z-50`} style={iconStyle}>
-      
+    <nav
+      className={`fixed top-0 left-0 w-full flex items-center justify-between md:justify-between h-20 ${
+        isScrolled || isProductsPage ? 'md:bg-white' : 'bg-transparent'
+      } backdrop-blur-md md:backdrop-blur-none transition-all duration-300 z-50`}
+      style={iconStyle}
+    >
       {/* Left Section */}
       <div className="hidden md:flex space-x-10 pl-10">
         <Link to="/collections" className="hover:underline">Collections</Link>
