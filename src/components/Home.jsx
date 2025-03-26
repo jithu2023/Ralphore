@@ -14,6 +14,8 @@ import luxuryBagBigvideo from '../assets/ralphlaurenvideo.mp4';
 import blazers from '../assets/blazers.webp';
 import trousers from '../assets/trousers.webp';
 import Footer from '../components/Footer';
+import { useNavigate } from 'react-router-dom';
+
 
 const settings = {
   infinite: true,
@@ -49,14 +51,28 @@ const settings = {
 
 function Home() {
   const [hoveredImage, setHoveredImage] = useState(null);
+  
+  const navigate = useNavigate();
+
 
   return (
     <div className="overflow-y-auto">
       {/* Hero Section */}
       <div className="relative w-full h-screen">
         <img src={heroImage} alt="Fashion Banner" className="absolute top-0 left-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 flex items-center justify-center md:justify-start pl-10 md:pl-20 bg-opacity-80">
+          <div className="max-w-lg w-full">
+            <h1 className="text-4xl md:text-6xl font-bold text-[#3e2c1c] mb-6 hidden md:block">Discover Your <span className="text-[#5b3b2e]">Style</span></h1>
+            <p className="text-lg md:text-xl text-[#6e4d3b] mb-8 hidden md:block">Elevate your wardrobe with our latest fashion <span className="text-[#3e2c1c]">collection</span>.</p>
+            <div className="flex justify-center md:justify-start mt-50 md:mt-0">
+              <button onClick={() => navigate('/products')} className="backdrop-blur-lg bg-white/10 border border-white text-white font-semibold py-2 px-12 md:py-3 md:px-20 shadow-lg hover:bg-white/20 transition duration-300 active:scale-95">Shop Now</button>
+            </div>
+          </div>
+        </div>
       </div>
 
+
+       
       {/* Summer Collection Section */}
       <div className="flex flex-col md:flex-row items-center justify-center">
         <div className="md:w-1/2 mt-20 md:mt-0 md:ml-20 order-1 md:order-2 mb-10 md:mb-0">
