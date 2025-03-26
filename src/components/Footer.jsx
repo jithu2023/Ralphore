@@ -5,7 +5,7 @@ import { FaFacebookF, FaInstagram, FaPinterestP, FaYoutube, FaGooglePay, FaPaypa
 function Footer() {
   return (
     <footer className="bg-white text-gray-600 py-16 relative z-10">
-      <div className="container mx-auto px-4 md:px-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+      <div className="container mx-auto px-4 md:px-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-center md:text-left">
         {/* Shop Section */}
         <div>
           <h3 className="text-xl font-semibold mb-4 text-black">Shop</h3>
@@ -35,16 +35,16 @@ function Footer() {
         </div>
 
         {/* Social and Payment Section */}
-        <div className='ml-10'>
+        <div>
           <h3 className="text-xl font-semibold mb-4 text-black">Follow Us</h3>
-          <div className="flex space-x-4">
+          <div className="flex justify-center md:justify-start space-x-4 mb-6">
             <FaFacebookF className="text-[#1877F2]" />
             <FaInstagram className="text-[#E1306C]" />
             <FaPinterestP className="text-[#BD081C]" />
             <FaYoutube className="text-[#FF0000]" />
           </div>
-          <h3 className="text-xl font-semibold mt-10 mb-4 text-black">Supported Payment Methods</h3>
-          <div className="flex space-x-4">
+          <h3 className="text-xl font-semibold mb-4 text-black">Supported Payment Methods</h3>
+          <div className="flex justify-center md:justify-start space-x-4">
             <FaGooglePay className="text-black" />
             <FaPaypal className="text-blue-600" />
             <FaCcVisa className="text-blue-700" />
